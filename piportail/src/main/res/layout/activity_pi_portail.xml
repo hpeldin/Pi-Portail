@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.piportail.PiPortail"
+    tools:ignore="MergeRootFrame"
+    android:background="#d7ecf1">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Quitter"
+        android:id="@+id/bouttonquitter"
+        android:layout_gravity="right|top"
+        android:background="#2490ff"
+        android:onClick="bouttonOnClick"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        android:text="Pi Portail"
+        android:id="@+id/piportail"
+        android:layout_gravity="center_horizontal|bottom|right"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="30dp" />
+
+    <TextView
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:text="(c)2014 Eldin Père et Fils"
+        android:id="@+id/infos"
+        android:layout_gravity="left|bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="50dp"
+        android:password="false" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="Ouvrir"
+        android:id="@+id/bouttonouvrir"
+        android:layout_gravity="center|bottom"
+        android:onClick="bouttonOnClick"
+        android:layout_marginBottom="100dp" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal|top"
+        android:src="@drawable/portail"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Configuration"
+        android:id="@+id/bouttonconf"
+        android:layout_gravity="center_horizontal|bottom"
+        android:onClick="MajConfiguration"
+        android:singleLine="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Status"
+        android:id="@+id/bouttonstatus"
+        android:layout_gravity="left|top"
+        android:clickable="true"
+        android:enabled="true"
+        android:background="#2490ff"
+        android:onClick="bouttonOnClick"
+        android:singleLine="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/status"
+        android:layout_gravity="center_horizontal|top"
+        android:password="false"
+        android:text=" "
+        android:paddingTop="20dp"
+        android:paddingRight="100dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="40dp" />
+
+</FrameLayout>
+
+
